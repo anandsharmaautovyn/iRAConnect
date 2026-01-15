@@ -1,6 +1,5 @@
 import { Dimensions } from 'react-native';
-// import { Baseurl } from './api'
-// import storage from './storage';
+import storage from './storage';
 const { width, height } = Dimensions.get('window');
 
 const baseWidth = 375;
@@ -23,4 +22,4 @@ const Fonts = {
   themeFontMedium: 'Poppins-Medium',
   themeFontBold: 'PPoppins-SemiBold',
 }
-export { vw, vh, fs, Colors, storage, Fonts, Baseurl };
+export { vw, vh, fs, Colors, storage, Fonts };

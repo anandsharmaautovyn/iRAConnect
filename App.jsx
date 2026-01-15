@@ -1,5 +1,6 @@
-import { StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { StatusBar, StyleSheet, useColorScheme } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Router from './src/navigation'
 import Store from '@store';
 import { Provider } from 'react-redux';
 
@@ -16,9 +17,7 @@ function App() {
 function AppContent() {
   return (
     <Provider store={Store}>
-    <View style={styles.container}>
-      <Text style={{color: 'black'}}>testing</Text>
-    </View>
+      <Router />
     </Provider>
   );
 }
