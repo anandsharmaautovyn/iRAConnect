@@ -1,5 +1,6 @@
 import { StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Store from '@store';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -13,9 +14,11 @@ function App() {
 
 function AppContent() {
   return (
+    <Provider store={Store}>
     <View style={styles.container}>
       <Text style={{color: 'black'}}>testing</Text>
     </View>
+    </Provider>
   );
 }
 
