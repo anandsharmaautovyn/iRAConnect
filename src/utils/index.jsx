@@ -14,7 +14,11 @@ const Colors = {
     themeColor: '#17AA9C',
     themeSecondaryColor: '#081528',
     themeTertiaryColor: '#1B263C',
+    lightBlue: '#08B9E8',
+    darkGrey: '#1a1a1a',
+    lightGrey: '#252525',
     black: '#000',
+    grey: '#848484',
   };
 
 const Fonts = {
