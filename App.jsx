@@ -1,6 +1,7 @@
 import { StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Store from '@store';
+import { Provider } from 'react-redux';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
